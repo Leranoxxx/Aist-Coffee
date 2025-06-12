@@ -69,7 +69,7 @@ font-family: "Manrope", sans-serif;
     }
 
 .jsoff {
-    display: flex;
+    color: red;
     justify-content: center;
     text-align: center;
     background-color: white;
