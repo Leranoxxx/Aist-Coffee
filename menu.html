@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>CART</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/reset.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kelly+Slab&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="./scripts/main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <h1><a href=./index.html>АИСТ КОФЕ</a></h1>
+    </div>
+    <div class="burger" onclick="showSidebar()"><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="36" fill="none" viewBox="0 0 20 18">
+            <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"/>
+        </svg></div>
+            <nav>
+            <ul class="sidebar">
+                <li onclick="hideSidebar()"><a href="#"><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="none" viewBox="5 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 19-7-7 7-7"/>
+                </svg></a></li>
+                <li><a href="./index.html">НА ГЛАВНУЮ</a></li>
+                <li><a href="./about.html">КОНЦЕПЦИЯ</a></li>
+                <li><a href="./contacts.html">КОФЕЙНИ</a></li>
+                <li><a href="./menu.html">МЕНЮ</a></li>
+                <li><a href="./faq.html">FAQ</a></li>
+                <li class="copyright">© 2025 Аист Кофе</li>
+            </ul>
+        </nav>
+    <div class="rectangle"></div>
+    <header class="header">
+                <div class="header__container">
+                    <button class="header__cart-btn" type="button" onclick="openCart()">🛒</button>
+                        <div class="header__cart-block cart-block-header" id="hiddenCart">
+                                <b><h3 class="cart-block-header__title">ВАША КОРЗИНА</h3></b>
+                                    <div class="cart-block-header__items">
+                                        <div class="cart-block-header__item item-cart-header">
+                                            <!--<a href="#" class="item-cart-header__link">
+                                                <h4 class="item-cart-header__title">капучино</h4>
+                                                    </a>
+                                                    <span class="item-cart-header__price">365₽</span>
+                                                    <div class="item-cart-header__count">
+                                                        <button type="button" class="item-cart-header__btn btn-minus"><b>-</b></button>
+                                                        <span class="item-cart-header__number">1</span>
+                                                        <button type="button" class="item-cart-header__btn btn-plus"><b>+</b></button>
+                                                    </div>
+                                                    <button type="button" class="item-cart-header__remove btn-remove">✖</button>-->
+                                            </div>
+                                                </div>
+                                                <div class="cart-block-header__result">
+                                                    <h4 class="cart-block-header__result__title">к оплате:</h4>
+                                                    <span class="cart-block-header__result__price">0₽</span>
+                                                </div>
+                                                <div class="cart-block-header__link">
+                                                    <a href="./information.html" class="cart-block-header__link link-big">оформить заказ</a>
+                                            </div>
+                            </div>
+                    </div>
+    </header>
+    <main class="page">
+        <section class="hero">
+            <div class="menu"><h2>МЕНЮ</h2></div>
+            <a href="#drinks"><p class="drinks-1">напитки</p></a>
+            <a href="#buns"><p class="buns-1">выпечка</p></a>
+            <div class="hero__container">
+            <div class="hot" id="drinks"><h2>ГОРЯЧИЕ НАПИТКИ🌡</h2></div>
+            <div class="cold"><h2>ХОЛОДНЫЕ НАПИТКИ ❄</h2></div>
+            <div class="bulki" id="buns"><h2>ВЫПЕЧКА 𖦹</h2></div>
+              <div class="hero__body">
+                <div class="hero__item item-hero">
+                        <img src="./images/cappucino.jpg" alt="cappucino">
+                    </a>
+                    <div class="item-hero__body">
+                        <a href="#" class="item-hero__link">
+                            <h4 class="item-hero__title">капучино</h4>
+                        </a>
+                        <p class="item-hero__price">365₽</p>
+                        <button type="button" class="item-hero__add-btn link"
+                        data-name="капучино"
+                        data-price="365"
+                        data-href="#"
+                        >капучино │ 365₽ │ 🛒</button>
+                    </div>
+                </div>
+                <div class="hero____item item-hero">
+                        <img src="./images/latte.jpg" alt="latte">
+                    </a>
+                    <div class="item-hero__body">
+                        <a href="#" class="item-hero__link">
+                            <h4 class="item-hero__title">латте</h4>
+                        </a>
+                        <p class="item-hero__price">395₽</p>
+                        <button type="button" class="item-hero__add-btn link"
+                        data-name="латте"
+                        data-price="395"
+                        data-href="#"
+                        >латте │ 395₽ │  🛒</button>
+                    </div>
+                </div>
+                <div class="hero__item item-hero">
+                        <img src="./images/americano.jpg" alt="americano">
+                    </a>
+                    <div class="item-hero__body">
+                        <a href="#" class="item-hero__link">
+                            <h4 class="item-hero__title">американо</h4>
+                        </a>
+                        <p class="item-hero__price">330₽</p>
+                        <button type="button" class="item-hero__add-btn link"
+                        data-name="американо"
+                        data-price="330"
+                        data-href="#"
+                        >американо │ 330₽ │ 🛒</button>
+                    </div>
+                </div>
+                <div class="hero__item item-hero">
+                        <img src="./images/filter.jpg" alt="filter">
+                    </a>
+                    <div class="item-hero__body">
+                        <a href="#" class="item-hero__link">
+                            <h4 class="item-hero__title">воронка</h4>
+                        </a>
+                        <p class="item-hero__price">310₽</p>
+                        <button type="button" class="item-hero__add-btn link"
+                        data-name="воронка"
+                        data-price="310"
+                        data-href="#"
+                        >воронка │ 310₽ │ 🛒</button>
+              </div>
+          </div>
+                <div class="hero__item item-hero">
+                        <img src="./images/icel.jpg" alt="ice-latte">
+                    </a>
+                    <div class="item-hero__body">
+                        <a href="#" class="item-hero__link">
+                            <h4 class="item-hero__title">айс-латте</h4>
+                        </a>
+                        <p class="item-hero__price">380₽</p>
+                        <button type="button" class="item-hero__add-btn link"
+                        data-name="айс-латте"
+                        data-price="380"
+                        data-href="#"
+                        >айс-латте │ 380₽ │  🛒</button>
+                </div>
+                </div>
+                 <div class="hero__item item-hero">
+                        <img src="./images/bumble.jpg" alt="bumble">
+                    </a>
+                    <div class="item-hero__body">
+                        <a href="#" class="item-hero__link">
+                            <h4 class="item-hero__title">бамбл кофе</h4>
+                        </a>
+                        <p class="item-hero__price">500₽</p>
+                        <button type="button" class="item-hero__add-btn link"
+                        data-name="бамбл кофе"
+                        data-price="500"
+                        data-href="#"
+                        >бамбл кофе │ 500₽ │  🛒</button>
+            </div>
+            </div>
+                <div class="hero__item item-hero">
+                        <img src="./images/matcha.jpg" alt="ice-matcha">
+                    </a>
+                    <div class="item-hero__body">
+                        <a href="#" class="item-hero__link">
+                            <h4 class="item-hero__title">айс-матча</h4>
+                        </a>
+                        <p class="item-hero__price">425</p>
+                        <button type="button" class="item-hero__add-btn link"
+                        data-name="айс-матча"
+                        data-price="425"
+                        data-href="#"
+                        >айс-матча │ 425₽ │  🛒</button>
+            </div>
+            </div>
+            <div class="hero__item item-hero">
+                        <img src="./images/smuzi.jpg" alt="ice-smoothie">
+                    </a>
+                    <div class="item-hero__body">
+                        <a href="#" class="item-hero__link">
+                            <h4 class="item-hero__title">айс-смузи</h4>
+                        </a>
+                        <p class="item-hero__price">650₽</p>
+                        <button type="button" class="item-hero__add-btn link"
+                        data-name="ай-смузи"
+                        data-price="650"
+                        data-href="#"
+                        >айс-смузи │ 650₽ │  🛒</button>
+            </div>
+            </div>
+                        <div class="hero__item item-hero">
+                        <img src="./images/ulitka.jpg" alt="ulitka">
+                    </a>
+                    <div class="item-hero__body">
+                        <a href="#" class="item-hero__link">
+                            <h4 class="item-hero__title">снейлбон</h4>
+                        </a>
+                        <p class="item-hero__price">500₽</p>
+                        <button type="button" class="item-hero__add-btn link"
+                        data-name="снейлбон"
+                        data-price="220"
+                        data-href="#"
+                        >снейлбон │ 220₽ │  🛒</button>
+            </div>
+            </div>
+            <div class="hero__item item-hero">
+                        <img src="./images/croi.jpg" alt="croissant">
+                    </a>
+                    <div class="item-hero__body">
+                        <a href="#" class="item-hero__link">
+                            <h4 class="item-hero__title">круассан</h4>
+                        </a>
+                        <p class="item-hero__price">155₽</p>
+                        <button type="button" class="item-hero__add-btn link"
+                        data-name="круссик"
+                        data-price="150"
+                        data-href="#"
+                        >круссик │ 150₽ │  🛒</button>
+                  <div class="hit-block">
+                    <p class="hit">█▬█ █ ▀█▀</p>
+                        <div class="star-twelve"></div>
+                </div>
+                <div class="hit-block__second">
+                    <p class="hit__second">█▬█ █ ▀█▀</p>
+                        <div class="star-twelve__second"></div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+</section>
+</main>
+    <script src="./scripts/cart.js"></script>
+    <div class ="attension-menu">
+    <h3>НЕКОММЕРЧЕСКИЙ ДИПЛОМНЫЙ ПРОЕКТ</h3>
+    </div>
+</body>
+</html>
