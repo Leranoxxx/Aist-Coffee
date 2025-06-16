@@ -18,6 +18,7 @@
     margin-right: auto;
     color: rgb(22, 22, 22);
     text-align: center;
+    word-spacing: 100px;
     border: 1px solid black;
     padding: 80px;
     background-color: black;
@@ -33,6 +34,7 @@
     color: rgb(22, 22, 22);
     margin-top: 800px;
     text-align: center;
+	word-spacing: 100px;
     border: 1px solid black;
     padding: 80px;
     background-color: black;
@@ -48,6 +50,7 @@
     color: rgb(22, 22, 22);
     margin-top: 50px;
     text-align: center;
+	word-spacing: 100px;
     border: 1px solid black;
     padding: 80px;
     background-color: black;
@@ -63,6 +66,7 @@ font-family: "Manrope", sans-serif;
     color: rgb(22, 22, 22);
     margin-top: 841px;
     text-align: center;
+	word-spacing: 100px;
     border: 1px solid black;
     padding: 80px;
     background-color: black;
