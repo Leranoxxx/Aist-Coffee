@@ -16,7 +16,7 @@
     font-size: 35px;
     margin-left: auto;
     margin-right: auto;
-    color: white;
+    color: rgb(255, 255, 255);
     text-align: center;
     word-spacing: 100px;
     border: 1px solid black;
@@ -31,7 +31,7 @@
     font-size: 35px;
     margin-left: auto;
     margin-right: auto;
-    color: white;
+    color: rgb(255, 255, 255);
     margin-top: 800px;
     text-align: center;
 	word-spacing: 100px;
@@ -47,7 +47,7 @@
     font-size: 35px;
     margin-left: auto;
     margin-right: auto;
-    color: white;
+    color: rgb(255, 255, 255);
     margin-top: 50px;
     text-align: center;
 	word-spacing: 100px;
@@ -63,7 +63,7 @@ font-family: "Manrope", sans-serif;
     font-size: 35px;
     margin-left: auto;
     margin-right: auto;
-    color: white;
+    color: rgb(255, 255, 255);
     margin-top: 841px;
     text-align: center;
 	word-spacing: 100px;
